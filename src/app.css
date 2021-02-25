@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+
+*,*:focus{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+}
+
+#under_construction {
+	height: 100vh;
+    width: 100vw;
+    background-image: url(https://i.pinimg.com/originals/b2/cc/5f/b2cc5f5….jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    background: linear-gradient(red,green,blue);
+    display: flex;
+    align-items: center;justify-content: center;
+}
+
+.menu {
+	width: 100%;
+	height: 100px;
+	background-color: #000;
+	display: flex;
+	justify-content: space-between;
+	font-family: 'RocknRoll One', sans-serif;
+	text-transform: capitalize;
+	font-weight: 600;
+	opacity:1;
+	box-shadow: 1px 2px 6px 2px #616161;
+	letter-spacing: 2px;
+}
+.logo_div{
+	text-align: center;
+}
+
+#logo_img{
+	height: 130%;
+	width: 50%;
+	margin-top: -20px;
+}
+
+.links_div{
+	/*background-color: pink;*/
+	flex-basis: 65%;
+	display: flex;
+	justify-content: space-around;
+}
+
+.burger_div {
+	display: none;
+	cursor: pointer;
+}
+
+.link {
+  flex: 1 1 0;
+  width: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*border: 2px solid #red;*/
+  transition: all 0.7s ease;
+}
+
+
+.nav_link{
+	width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 103.34px;
+	color: #fff;
+	text-decoration: none;
+}
+
+.link:hover {
+	font-size: 18px;
+    background-color: #424242;
+    text-shadow: 4px 4px 3px #000000;
+}
+
+.nav_link:hover{
+	color: #80deea;
+}
+
+.menu_active {
+	border-bottom: 3px solid #64b5f6;
+    background: #616161;
+    color: #80deea;
+    text-shadow: 4px 4px 3px #000000;
+}
+/*Login form Styling */
+
+.Login_form_div {
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Cabin', sans-serif;
+}
+
+.form_center_div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input_div {
+    height: 70px;
+    margin-bottom: 15px;
+    width: 330px;
+    border-radius: 15px;
+    padding-top: 5px;
+    padding-left: 10px;
+}
+
+.input_div > input {
+    color: #1d2129;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    font-size: 20px;
+    padding-left: 13px;
+    font-family: 'Cabin', sans-serif;
+    border: 1px solid #dddfe2;
+  
+}
+
+.input_div > input:focus {
+	border: 1px solid #1877f2;
+    box-shadow: 0 0 0 2px #e7f3ff;
+    caret-color: #1877f2;
+}
+
+::placeholder {
+	color: #bec3d3;
+}
+
+.btn_div{
+	max-width: 100%;
+	padding-left: 11px;
+}
+.btn_div > button {
+	height: 70px;
+	width: 100%;
+	background-color: #1877f2;
+	color: #fff;
+	font-size: 25px;
+	font-weight: bold;
+	border: none;
+    border-radius: 10px;
+    transition: background 0.5s linear;
+    font-family: 'Cabin', sans-serif;
+
+}
+
+.btn_div > button:hover{
+	background-color: #166fe5;
+	cursor: pointer;
+}
+
+.forget_password{
+	text-align: center;
+	color: #1877f2;
+	font-family: 'Cabin', sans-serif;
+	margin-top: 15px;
+	letter-spacing: 1px;
+	word-spacing: 2px;
+}
+
+#hr_line{
+	width: 95%;
+	margin-top: 20px;
+	margin: 0 auto;
+	margin-top: 20px;
+	/*position: relative;*/
+	left:5px;
+	color: #dadde1;
+
+}
+
+.add_login_options {
+	margin-left: 13px;
+	margin-top: 12px;
+	font-size: 20px;
+}
+
+.add_login_options span {
+	/*position: relative;*/
+    bottom: -10px;
+}
+
+@media only screen and (max-width: 856px) {
+ .links_div{
+	flex-basis: 100%;
+
+}
+
+.link:last-child{
+	flex-grow: 1;
+}
+
+#logo_img{
+	height: 130%;
+	width: 90%;
+	margin-top: -15px;
+}
+
+}
+
+@media only screen and (max-width: 770px) {
+	.links_div{
+		display: none;
+	}
+	.burger_div{
+		display: inline-block;
+		color: #fff;
+		position: absolute;
+		right:20px;
+		top:20px;
+	}
+	.logo_div{
+		width: 50%;
+	}
+	
+	.responsive_links_div{
+		display: flex;
+		flex-direction: column;
+		background-color: #757575;
+		position: absolute;
+		color: red;
+		top:100px;
+		align-items: center;
+		width: 100%;
+		height: 100%;
+	}
+	.responsive_link{
+		width: 100%;
+	}
+	.responsive_menu{
+		opacity: 1;
+	}
+
+	.hide_links_div{
+		display: none;
+	}
+	.hide_link{
+		display: none;
+	}
+}
+
+
